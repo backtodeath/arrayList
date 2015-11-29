@@ -20,7 +20,7 @@ public class ShiftedArrayTest {
     public void getShiftedArrayWithAllWrongCases(){
         Mockito.when(shiftedArray.getEnteredNumber(INPUT_ARRAY_SIZE)).thenReturn(-5);
         Mockito.when(shiftedArray.getEnteredNumber(INPUT_SHIFTING_NUMBER)).thenReturn(-3);
-        int result[] = shiftedArray.getShiftedArray();
+        int[] result = shiftedArray.getShiftedArray();
         Assertions.assertThat(result).contains(2);
     }
 }

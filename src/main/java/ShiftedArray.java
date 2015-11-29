@@ -11,12 +11,12 @@ public class ShiftedArray {
     public int[] getShiftedArray() {
         int arraySize = getEnteredNumber(INPUT_ARRAY_SIZE);
         int numberToShift = getEnteredNumber(INPUT_SHIFTING_NUMBER);
-        int array[] = fillArray(arraySize);
+        int[] array = fillArray(arraySize);
         return shiftArrayOnNumber(array, numberToShift);
     }
 
     public int[] fillArray(int arraySize) {
-        int arrayToFill[] = new int[arraySize];
+        int[] arrayToFill = new int[arraySize];
         for (int i = 0; i < arraySize; i++) {
             arrayToFill[i] = i + 1;
         }
